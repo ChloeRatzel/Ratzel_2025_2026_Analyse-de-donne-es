@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  python:
+    build: .
+    volumes:
+      - .:/application
+    working_dir: /application
+    command: python src/main.py
