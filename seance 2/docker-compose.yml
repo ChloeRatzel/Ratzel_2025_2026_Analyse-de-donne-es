@@ -1,0 +1,8 @@
+services:
+  python:
+    build: ./
+    volumes:
+      - "./src:/application"
+    working_dir: /application
+    command: python main.py
+
